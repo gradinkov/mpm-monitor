@@ -23,7 +23,7 @@ if (empty($_GET['address'])) {
 <?php
 if(empty($_GET['address'])) { exit; }
 
-include('../functions.php');
+include('functions.php');
 date_default_timezone_set('UTC');
 
 $workers = get_workers($_GET['address']);
