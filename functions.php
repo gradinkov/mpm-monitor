@@ -3,7 +3,8 @@
 // Connect to the database, or create it if the file doesn't exist
 function connect_database() {
 
-  $dbpath = 'sqlite:' . dirname(__FILE__) . '/miners.sqlite3';
+  // $dbpath = 'sqlite:' . dirname(__FILE__) . '/miners.sqlite3';
+  $dbpath = 'sqlite:/var/www/db/miners.sqlite3';
   $db = new PDO($dbpath);
   $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
